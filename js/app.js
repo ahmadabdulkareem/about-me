@@ -13,12 +13,13 @@ switch (myName.toLowerCase()) {
     case 'no':
     case 'n':
         alert("well, it's Ahmad Nice to meet you ", name);
-        default:
-            alert("Answer Only Yes or no");
+        break;
+    default:
+        alert("Answer Only Yes or no");
 }
 
 
-var paris = prompt('Have you ever been to paris?!');
+var paris = prompt("Have I ever been to paris?!");
 
 switch (paris.toLowerCase()) {
     case 'yes':
@@ -28,11 +29,12 @@ switch (paris.toLowerCase()) {
     case 'no':
     case 'n':
         alert("Rihgt, Obviously(0_0)");
-        default:
-            alert("Answer Only Yes or no");
+        break;
+    default:
+        alert("Answer Only Yes or no");
 }
 
-var pop = prompt("do you like pop music?!");
+var pop = prompt("do you thig that I like pop music?!");
 
 switch (pop.toLowerCase()) {
     case 'yes':
@@ -42,26 +44,29 @@ switch (pop.toLowerCase()) {
     case 'no':
     case 'n':
         alert("Wrong, I do like it.");
-        default:
-            alert("Answer Only Yes or no");
+        break;
+    default:
+        alert("Answer Only Yes or no");
 }
 
-var nancy = prompt("Do you love Nancy Ajram? ha!");
+var nancy = prompt("Do I love Nancy Ajram? ha!");
 
 switch (nancy.toLowerCase()) {
     case 'yes':
     case 'y':
-        alert("yupppy, who doesn't");
+        alert("yupy, who doesn't");
         break;
     case 'no':
     case 'n':
         alert("oopsy.not righty!");
-        default:
-            alert("Answer Only Yes or no");
+        break;
+    default:
+        alert("Answer Only Yes or no");
 }
 
-var goal = prompt("Is one of your goals is to get new Stockings?");
-switch (nancy.toLowerCase()) {
+var goal = prompt("Is one of my goals is to get new Stockings?");
+
+switch (goal.toLowerCase()) {
     case 'yes':
     case 'y':
         alert("what a dumb question is that, of course no!!!");
@@ -69,6 +74,8 @@ switch (nancy.toLowerCase()) {
     case 'no':
     case 'n':
         alert("hhhh- right!");
-        default:
-            alert("Answer Only Yes or no");
+        break;
+    default:
+        alert("Answer Only Yes or no");
 }
+alert(`hello ${ name} thanks for visiting, you're much welcomed.`);
