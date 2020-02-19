@@ -134,37 +134,24 @@ if (tries == 4 ){
 
 var cities = ['amman', 'damascus', 'dubai', 'alquds', 'beirut', 'cairo'];
 var tries1 = 0;
-var city;
-for(ar=0; ar<cities.length; ar++){
 
-
-}
-//while (tries1 < 6) 
-       for(var i=0; i<6; i++){
-    city = prompt('Guess an arabian city(middle eastern)!');
-    switch (cities) {
-
-        case (city = 'amman'):
-        case (city = 'damascus'):
-        case (city = 'dubai'):
-        case (city = 'alquds'):
-        case (city = 'cairo'):
-        case (city = 'beirute'):
-            //mark++
-            tries1++;
-            alert('congrats!! ' + `mark${mark}`);
+//while (tries1 < 6)  
+for (var i = 0; i < 6; i++) {
+    var city = prompt('Guess an arabian city(middle eastern)!');
+    for (var l = 0; l < cities.length; l++) {
+        console.log(tries1);
+        if (city === cities[l]) {
+            alert('welldone ' + `${l} is the answer value.`);
+           // alert(`thanks to you ${name}, your mark is: ${mark} out of 7`);
+            tries1= tries1+1;
             break;
-             default: alert('wrong');
-            tries1++;
-
-
+        }
     }
-}
-if (tries1 == 6) {
-    alert('tries=0 . posible answers: amman,damascus,dubai,alquds, cairo,beirute');
-}
-else if (city == cities[ar]){
-alert('well done');
-}
-
-
+    if (tries1 ===1) {
+        mark++;
+        break;
+    }
+    if (tries1 === 6){ 
+        alert("your tries ran out");
+        break;} }
+ alert(`thanks to you ${name}, mark: ${mark} out of 7`);
